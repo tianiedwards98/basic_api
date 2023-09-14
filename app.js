@@ -81,12 +81,12 @@ const server = http.createServer((req, res) => {
         });
         req.on('end', () => {
             const data = JSON.parse(body);
-            groceryList.forEach(item => {
-                if(item.name === data.name){
+            groceryList.forEach((item) => {
+                if(item.itemName === data.itemName){
                     item.purchased = true;
                 }
             })
-            logger.info(`Item: "${data.name}" purchased with PUT request`);
+            logger.info(`Item: "${data.itemName}" purchased with PUT request`);
             res.writeHead(200, {'Content-Type': 'application/json'});
             res.end(JSON.stringify({message: 'Resource Changed Successfully!'}));
         });
@@ -99,11 +99,11 @@ const server = http.createServer((req, res) => {
         req.on('end', () => {
             const data = JSON.parse(body);
             groceryList.forEach((item,index) => {
-                if(item.name === data.name){
-                    delete groceryList[index];
+                if(item.itemName === data.itemName){
+                    groceryList.pop(index);
                 }
             })
-            logger.info(`Item: "${data.name}" deleted with DELETE request`);
+            logger.info(`Item: "${data.itemName}" deleted with DELETE request`);
             res.writeHead(200, {'Content-Type': 'application/json'});
             res.end(JSON.stringify({message: 'Resource Deleted Successfully!'}));
         });

@@ -81,32 +81,41 @@ const server = http.createServer((req, res) => {
         });
         req.on('end', () => {
             const data = JSON.parse(body);
-            groceryList.forEach((item) => {
-                if(item.itemName === data.itemName){
-                    item.purchased = true;
+            id = data.id;
+            for(gl of groceryList){
+                if(gl.id === id){
+                    gl.itemName = data.itemName;
+                    gl.price = data.price;
+                    gl.quantity = data.quantity;
+                    gl.purchased = data.purchased;
+                    console.log(gl);
+                    console.log(data);
+                    logger.info(`Successful PUT:\n${JSON.stringify(data)}`);
                 }
-            })
-            logger.info(`Item: "${data.itemName}" purchased with PUT request`);
+            }
+            
+            // you are meant to store this data somewhere
+            // maybe a database??
+            
+
             res.writeHead(200, {'Content-Type': 'application/json'});
-            res.end(JSON.stringify({message: 'Resource Changed Successfully!'}));
+            res.end(JSON.stringify({message: 'Resource Updated Successfully!'}));
         });
-    //DELETE     
+    //DELETE 
     }else if(req.method === "DELETE"){
-        let body = '';
-        req.on('data', (chunk) => {
-            body += chunk;
-        });
-        req.on('end', () => {
-            const data = JSON.parse(body);
-            groceryList.forEach((item,index) => {
-                if(item.itemName === data.itemName){
-                    groceryList.pop(index);
-                }
-            })
-            logger.info(`Item: "${data.itemName}" deleted with DELETE request`);
-            res.writeHead(200, {'Content-Type': 'application/json'});
-            res.end(JSON.stringify({message: 'Resource Deleted Successfully!'}));
-        });
+        const requestUrl = url.parse(req.url).query;
+        const id = Number(requestUrl);
+        // delete item
+        for(gl of groceryList){
+            if (id === gl.id){
+                groceryList.pop(id);
+                logger.info(`Successful Delete:\n${JSON.stringify(groceryList)}`);
+            }
+        }
+        
+        console.log(requestUrl);
+        res.writeHead(201, {'Content-Type': 'application/json'});
+        res.end(JSON.stringify({message: 'Resource Deleted Successfully!'}));
     }else{
         res.writeHead(404, {'Content-Type': 'text/plain'});
         res.end('Not Found');

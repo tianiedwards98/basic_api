@@ -35,3 +35,9 @@
 2023-09-14T22:00:16.213Z [info]: Successful GET
 2023-09-14T22:00:22.164Z [info]: Successful POST:
 [{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false},{"id":2,"itemName":"Pizza","price":15.99,"quantity":2,"purchased":false},{"id":3,"itemName":"Chips","price":4.99,"quantity":1,"purchased":false},{"id":4,"itemName":"Apples","price":5.99,"quantity":1,"purchased":false},{"id":5,"itemName":"Milk","price":9.99,"quantity":2,"purchased":false}]
+2023-09-15T14:46:59.206Z [info]: Successful GET
+2023-09-15T14:54:46.731Z [info]: Successful GET
+2023-09-15T14:57:46.963Z [info]: Successful GET
+2023-09-15T15:00:20.338Z [info]: Successful GET
+2023-09-15T15:55:29.308Z [info]: Successful GET
+2023-09-15T15:55:43.069Z [info]: Successful GET

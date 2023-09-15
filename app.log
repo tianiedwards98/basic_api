@@ -1,43 +1,6 @@
-2023-09-14T20:45:19.793Z [info]: Successful GET
-2023-09-14T20:45:25.922Z [info]: Successful POST:
-[{"name":"ice-cream","price":4.99,"quantity":1,"purchased":false},{"name":"milk","price":15,"quantity":3,"purchased":true}]
-2023-09-14T20:45:29.806Z [info]: Successful POST:
-[{"name":"ice-cream","price":4.99,"quantity":1,"purchased":false},{"name":"milk","price":15,"quantity":3,"purchased":true},{"name":"milk","price":15,"quantity":3,"purchased":true}]
-2023-09-14T20:45:45.685Z [info]: Successful GET
-2023-09-14T20:45:53.316Z [warn]: Unsuccessful change of grocery item
-2023-09-14T20:54:16.823Z [info]: Successful GET
-2023-09-14T20:54:20.733Z [info]: Successful POST:
-[{"name":"ice-cream","price":4.99,"quantity":1,"purchased":false},{"name":"milk","price":15,"quantity":3,"purchased":true}]
-2023-09-14T20:54:26.856Z [info]: Successful GET
-2023-09-14T21:03:47.046Z [info]: Successful GET
-2023-09-14T21:03:51.585Z [info]: Successful POST:
-[{"item":"ice-cream","price":4.99,"quantity":1,"purchased":false},{"name":"milk","price":15,"quantity":3,"purchased":true}]
-2023-09-14T21:03:56.058Z [info]: Successful GET
-2023-09-14T21:28:40.815Z [info]: Successful GET
-2023-09-14T21:29:29.632Z [info]: Successful POST:
-[{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false},{"id":2,"itemName":"Pizza","price":15.99,"quantity":2,"purchased":false},{"id":3,"itemName":"Chips","price":4.99,"quantity":1,"purchased":false},{"id":4,"itemName":"Apples","price":5.99,"quantity":1,"purchased":false},{"id":5,"itemName":"Milk","price":9.99,"quantity":2,"purchased":false}]
-2023-09-14T21:29:33.600Z [info]: Successful GET
-2023-09-14T21:31:15.780Z [info]: Item was updated: Milk
-2023-09-14T21:31:27.377Z [info]: Successful GET
-2023-09-14T21:31:43.710Z [info]: Successful GET
-2023-09-14T21:32:10.723Z [info]: Successful GET
-2023-09-14T21:39:13.546Z [info]: Successful GET
-2023-09-14T21:39:22.424Z [info]: Successful POST:
-[{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false},{"id":2,"itemName":"Pizza","price":15.99,"quantity":2,"purchased":false},{"id":3,"itemName":"Chips","price":4.99,"quantity":1,"purchased":false},{"id":4,"itemName":"Apples","price":5.99,"quantity":1,"purchased":false},{"id":5,"itemName":"Milk","price":9.99,"quantity":2,"purchased":false}]
-2023-09-14T21:39:25.863Z [info]: Successful GET
-2023-09-14T21:45:02.465Z [info]: Successful GET
-2023-09-14T21:45:06.635Z [info]: Successful POST:
-[{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false},{"id":2,"itemName":"Pizza","price":15.99,"quantity":2,"purchased":false},{"id":3,"itemName":"Chips","price":4.99,"quantity":1,"purchased":false},{"id":4,"itemName":"Apples","price":5.99,"quantity":1,"purchased":false},{"id":5,"itemName":"Milk","price":9.99,"quantity":2,"purchased":false}]
-2023-09-14T21:46:39.551Z [info]: Successful GET
-2023-09-14T21:46:59.981Z [info]: Successful GET
-2023-09-14T21:47:04.081Z [info]: Successful POST:
-[{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false},{"id":2,"itemName":"Pizza","price":15.99,"quantity":2,"purchased":false},{"id":3,"itemName":"Chips","price":4.99,"quantity":1,"purchased":false},{"id":4,"itemName":"Apples","price":5.99,"quantity":1,"purchased":false},{"id":5,"itemName":"Milk","price":9.99,"quantity":2,"purchased":false}]
-2023-09-14T22:00:16.213Z [info]: Successful GET
-2023-09-14T22:00:22.164Z [info]: Successful POST:
-[{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false},{"id":2,"itemName":"Pizza","price":15.99,"quantity":2,"purchased":false},{"id":3,"itemName":"Chips","price":4.99,"quantity":1,"purchased":false},{"id":4,"itemName":"Apples","price":5.99,"quantity":1,"purchased":false},{"id":5,"itemName":"Milk","price":9.99,"quantity":2,"purchased":false}]
-2023-09-15T14:46:59.206Z [info]: Successful GET
-2023-09-15T14:54:46.731Z [info]: Successful GET
-2023-09-15T14:57:46.963Z [info]: Successful GET
-2023-09-15T15:00:20.338Z [info]: Successful GET
-2023-09-15T15:55:29.308Z [info]: Successful GET
-2023-09-15T15:55:43.069Z [info]: Successful GET
+2023-09-15T22:35:28.799Z [info]: Successful POST:
+[{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false},{"id":2,"itemName":"Pizza","price":15.99,"quantity":2,"purchased":false},{"id":3,"itemName":"Chips","price":4.99,"quantity":1,"purchased":false},{"id":4,"itemName":"Apples","price":5.99,"quantity":1,"purchased":false},{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false}]
+2023-09-15T22:35:28.807Z [info]: Successful PUT:
+{"id":4,"itemName":"Apples","price":10.99,"quantity":2,"purchased":true}
+2023-09-15T22:35:28.808Z [info]: Successful Delete:
+[{"id":1,"itemName":"Ice-cream","price":5.99,"quantity":1,"purchased":false},{"id":2,"itemName":"Pizza","price":15.99,"quantity":2,"purchased":false},{"id":3,"itemName":"Chips","price":4.99,"quantity":1,"purchased":false},{"id":4,"itemName":"Apples","price":10.99,"quantity":2,"purchased":true}]
